@@ -36,3 +36,21 @@
     transform: rotate(360deg);
   }
 }
+
+.collapse {
+  display: flex;
+  justify-content: flex-end;
+  margin: 50px;
+}
+
+.card {
+  background-color: rgb(38, 157, 157);
+  height: auto;
+  width: 400px;
+  border-radius: 25px;
+}
+
+.btn {
+  border-radius: 25px;
+  margin: 20px;
+}
