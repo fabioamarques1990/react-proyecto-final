@@ -1,7 +1,7 @@
 import { addDoc, serverTimestamp, collection } from 'firebase/firestore';
 import React, { useContext, useState } from 'react'
 import { db } from '../../firebaseConfig';
-import { CartContext } from '../context/Context';
+import { CartContext } from './context/Context';
 
 const Form = ({handleId}) => {
     const [nombre, setNombre] = useState('');
