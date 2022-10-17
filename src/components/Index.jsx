@@ -1,4 +1,5 @@
 import React from 'react'
+import Footer from '../Footer'
 import Galeria from '../Galeria'
 import Hero from './header/Hero'
 
@@ -7,6 +8,7 @@ const Index = () => {
     <div>
     <Hero />
     <Galeria />
+    <Footer />
     </div>
   )
 }
