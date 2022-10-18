@@ -13,3 +13,16 @@
   border-radius: 25px;
   margin: 20px;
 }
+
+.order-confirmation {
+  display: flex;
+  flex-direction: column;
+  background-color: rgb(38, 157, 157);
+  margin: 50px;
+  justify-content: center;
+  align-items: center;
+  height: 600px;
+  width: auto;
+  justify-self: center;
+  align-self: center;
+}

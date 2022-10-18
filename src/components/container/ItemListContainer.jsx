@@ -21,7 +21,7 @@ const ItemListContainer = () => {
                     id: item.id, ...item.data(),
                 };
             });
-        setItems(items);
+            setItems(items);
         });
     }, [activity]);
 

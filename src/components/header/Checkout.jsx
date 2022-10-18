@@ -11,20 +11,25 @@ const Checkout = () => {
 
     if (orderId) {
         return (
-            <div>
-                <p>¡Tu aventura está reservada!</p>
+            <div className="order-confirmation">
+                <div>
+                    <h3>¡Tu aventura está reservada!</h3>
+                </div>
                 <br />
-                <p>El numero para acceder a tu reserva es:</p>
-                <h3>{orderId}</h3>
+                <br />
+                <div>
+                    <p>El numero para acceder a tu reserva es:</p>
+                    <p><b>{orderId}</b></p>
+                </div>
             </div>
         )
     }
 
-  return (
-    <div>
-        <Form handleId={handleId} />
-    </div>
-  )
+    return (
+        <div>
+            <Form handleId={handleId} />
+        </div>
+    )
 }
 
 export default Checkout

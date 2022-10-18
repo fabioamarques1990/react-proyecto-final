@@ -1,15 +1,15 @@
-import React, {useContext} from "react";
+import React, { useContext } from "react";
 import Carrito from "../../assets/carrito.png";
 import Basura from "../../assets/basura.png";
-import {CartContext} from "./context/Context";
+import { CartContext } from "../context/Context";
 import { Link } from "react-router-dom";
 
 const CartWidget = () => {
-    const {cartTotal, clear} = useContext(CartContext);
+    const { cartTotal, clear } = useContext(CartContext);
 
     return (
         <div>
-            <button type="button" className="btn position-relative me-1" title="Vaciar Carrito" onClick={()=> {clear()}}>
+            <button type="button" className="btn position-relative me-1" title="Vaciar Carrito" onClick={() => { clear() }}>
                 <img src={Basura} alt="Basura" width="20" />
             </button>
             <Link to={"/carrito"}>
@@ -24,4 +24,3 @@ const CartWidget = () => {
 
 export default CartWidget;
 
-        
