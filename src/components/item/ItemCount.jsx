@@ -26,22 +26,17 @@ const ItemCount = ({ stock, initial, onAdd }) => {
 
     useEffect(() => {
         setItemStock(stock);
-        }, [stock]);
+    }, [stock]);
 
     return (
-            <div className="row text-center">
-                <div className="col-md-2 text-center">
-                    <div className="input-group text-center">
-                        <input type="button" className="btn btn-secondary" value="-" onClick={() => { restar(cantidad - 1) }} />
-                        <input type="text" className="form-control" value={cantidad} onChange={() => { }} />
-                        <input type="button" className="btn btn-secondary" value="+" onClick={() => { sumar(cantidad + 1) }} />
-                    </div>
-                    <div className="d-grid gap-2 pt-3 text-center">
-                        <input type="button" className="btn btn-secondary" value="Agregar" onClick={() => {agregarPaquetes()}} />
-                    </div>
-                </div>
+        <div className="row">
+            <div className="col-md-6 offset-md-3" style={{ fontWeight: 'bold', color: 'grey' }}>
+                <p><input type="button" className="btn rounded-circle" style={{ fontWeight: 'bold', color: 'white', backgroundColor: '#80CECC' }} value="-" onClick={() => { restar(cantidad - 1) }} /> {cantidad} <input type="button" className="btn rounded-circle" style={{ fontWeight: 'bold', color: 'white', backgroundColor: '#80CECC' }} value="+" onClick={() => { sumar(cantidad + 1) }} /></p>
+                <p><input type="button" className="btn btn-lg mx-1" style={{ fontWeight: 'bold', color: 'white', backgroundColor: '#80CECC' }} value="Agregar" onClick={() => { agregarPaquetes() }} /></p>
             </div>
+        </div>
     );
 }
 
 export default ItemCount;
+

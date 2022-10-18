@@ -6,8 +6,6 @@
 
 .card {
   background-color: rgb(38, 157, 157);
-  height: auto;
-  width: 400px;
   border-radius: 25px;
 }
 
